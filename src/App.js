@@ -8,7 +8,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
 
-          <code>sebastian  prueba 6</code> 
+          <code>sebastian  prueba 7</code> 
 
         </p>
         <a
