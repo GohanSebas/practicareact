@@ -6,7 +6,7 @@ Comenzando 🚀
 //Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para //propósitos de desarrollo y pruebas.
 
 Desde el siguiente link puedes obtener una copia de este proyecto https://github.com/GohanSebas/practicareact.git,
-Este proyecto se encuentra desarrollado en
+Este proyecto se encuentra desarrollado en lenguaje JavaScript utilizando la bliblioteca de desarrollo React en su version 17.0.1   y Node.js  como entorno de ejecución para JavaScript.
 
 
 

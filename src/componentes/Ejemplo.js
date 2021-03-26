@@ -50,157 +50,35 @@ function Ejemplo() {
 
   return (
     
-    <div className="calculator-body"> 
-     
-    <div className={classes.margin}>
-        <Grid container spacing={3} alignItems="flex-end">
-          <Grid item>
-            <DragHandleIcon />
-          </Grid>
-          <Grid item >
-            <TextField id="input-with-icon-grid" label="Resultado" />
-          </Grid>
-        </Grid>
-      </div>
-      
-        <Grid container spacing={3}  >
-          
-          <Grid item xs={3}>
-            <Button
-              name="7"
-              variant="contained"              
-              size="small"
-              className={classes.button}
-              //startIcon={<SaveIcon />}
-            >
-              7
-            </Button>
-          </Grid>
+    <div className="button">
+    <button name="(" >(</button>
+    <button name="CE" >CE</button>
+    <button name=")" >)</button>
+    <button name="C" >C</button><br/>
 
-          <Grid item xs={3}>
-            <Button
-              name="8"
-              variant="contained"            
-              size="small"
-              className={classes.button}
-              //startIcon={<SaveIcon />}
-            >
-              8
-            </Button>
-          </Grid>
 
-          <Grid item xs={3}>
-            <Button
-              name="9"
-              variant="contained"
-              size="small"
-              className={classes.button}
-              //startIcon={<SaveIcon />}
-            >
-              9
-            </Button>
-          </Grid>
+    <button name="1" onClick={e => this.props.onClick(e.target.name)}>1</button>
+    <button name="2" onClick={e => this.props.onClick(e.target.name)}>2</button>
+    <button name="3" onClick={e => this.props.onClick(e.target.name)}>3</button>
+    <button name="+" onClick={e => this.props.onClick(e.target.name)}>+</button><br/>
 
-          <Grid item xs={3}>
-            <Button
-              name="/"
-              variant="contained"
-              color="primary"
-              size="small"
-              className={classes.button}
-              //startIcon={<SaveIcon />}
-            >
-              /
-            </Button>
-          </Grid>
-          
-          <Grid item xs={3}>
-            <Button
-              name="4"
-              variant="contained"             
-              size="small"
-              className={classes.button}
-            >
-              4
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button
-              name="5"
-              variant="contained"
-              size="small"
-              className={classes.button}
-            >
-              5
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button
-              name="6"
-              variant="contained"
-              size="small"
-              className={classes.button}
-            >
-              6
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button
-              name="-"
-              variant="contained"
-              color="primary"
-              size="small"
-              className={classes.button}
-            >
-              -
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button
-              name="1"
-              variant="contained"
-                size="small"
-              className={classes.button}
-            >
-              1
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button
-              name="2"
-              variant="contained"
-              size="small"
-              className={classes.button}
-            >
-              2
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button
-              name="3"
-              variant="contained"
-              size="small"
-              className={classes.button}
-            >
-              3
-            </Button>
-          </Grid>
-          <Grid item xs={3}>
-            <Button
-              name="+"
-              variant="contained"
-              color="primary"
-              size="small"
-              className={classes.button}
-            >
-              +
-            </Button>
-          </Grid>
-         
 
-        </Grid>
-              
-    </div>
+    <button name="4" onClick={e => this.props.onClick(e.target.name)}>4</button>
+    <button name="5" onClick={e => this.props.onClick(e.target.name)}>5</button>
+    <button name="6" onClick={e => this.props.onClick(e.target.name)}>6</button>
+    <button name="-" onClick={e => this.props.onClick(e.target.name)}>-</button><br/>
+
+    <button name="7" onClick={e => this.props.onClick(e.target.name)}>7</button>
+    <button name="8" onClick={e => this.props.onClick(e.target.name)}>8</button>
+    <button name="9" onClick={e => this.props.onClick(e.target.name)}>9</button>
+    <button name="*" onClick={e => this.props.onClick(e.target.name)}>x</button><br/>
+
+
+    <button name="." onClick={e => this.props.onClick(e.target.name)}>.</button>
+    <button name="0" onClick={e => this.props.onClick(e.target.name)}>0</button>
+    <button name="=" onClick={e => this.props.onClick(e.target.name)}>=</button>
+    <button name="/" onClick={e => this.props.onClick(e.target.name)}>÷</button><br/>
+</div>
     
   );
 }
