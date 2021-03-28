@@ -1,73 +1,55 @@
 Practica  React 
 
-En esta practica de  desarrollamos un calculadora basica ,utilizando Node.js que nos permite  crear el proyecto en el  lenguaje de programación JavaScript y utilizando la bliblioteca de Javascript React con el  fin de conocer esta herramienta que facilita el desarrollo de aplicaciones.    
+En esta practica de  desarrollamos un calculadora basica ,utilizando Node.js que nos permite  crear el proyecto en el  lenguaje de programación JavaScript , utilizando la bliblioteca de Javascript React con el  fin de conocer esta herramienta que facilita el desarrollo de aplicaciones y finalmente utilizamos Netlify como servicio de alojamiento  el  cual desplieja  el codigo subido en GitHub en tiempo real.
 
 Comenzando 🚀
-//Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para //propósitos de desarrollo y pruebas.
-
 Desde el siguiente link puedes obtener una copia de este proyecto https://github.com/GohanSebas/practicareact.git,
-Este proyecto se encuentra desarrollado en
-
+Este proyecto se encuentra desarrollado en lenguaje JavaScript utilizando la bliblioteca de desarrollo React en su version 17.0.1   y Node.js en su version 14.16.0 como entorno de ejecución para JavaScript.
 
 
 Pre-requisitos 📋
-//Que cosas necesitas para instalar el software y como instalarlas
 Los siguientes pre-requisitos son en base a la maquina y programas utilizadas para el desarrollo de este proyecto lo cual no hace indispensable el uso de estos ya que podrian ser sustituidos por versiones superiores o o programas que cumplan con esta función.
-Se recomienda Visual Studio Code Version 1.54.3 o superior
 
-Da un ejemplo
-Instalación 🔧
-Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose
+Se recomiendan los siguientes programas :
 
-Dí cómo será ese paso
+- Visual Studio Code Version 1.54.3  https://code.visualstudio.com/download
+- Node.js  14.16.0 https://nodejs.org/es/
+- Git  https://git-scm.com/downloads
+- React https://es.reactjs.org/docs/add-react-to-a-website.html#add-react-in-one-minute
+- Se recomienda crear una cuenta en GitHub  https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-homey como repositorio de nuestro proyecto y controlador de versiones.
+- Se recomienda crear una cuenta en Netlify https://www.netlify.com/ ya que nos permite desplejar nuestro proyecto en la web de forma , recuerden enlazarlo con el repositorio el GitHub ya que de aqui toma el codigo de desplieje.
 
-Da un ejemplo
-Y repite
 
-hasta finalizar
-Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo
-
-Ejecutando las pruebas ⚙️
-Explica como ejecutar las pruebas automatizadas para este sistema
-
-Analice las pruebas end-to-end 🔩
-Explica que verifican estas pruebas y por qué
-
-Da un ejemplo
-Y las pruebas de estilo de codificación ⌨️
-Explica que verifican estas pruebas y por qué
-
-Da un ejemplo
 Despliegue 📦
-Agrega notas adicionales sobre como hacer deploy
+
+Para desplejar el proyecto se abre una terminal en visual code  o   desde la carpeta del proyecto abrimos una ventana CMD , validamos que estemos en la ruta del proyecto  y ejecutamos el comando " npm start " el cual si  instalamos todo correctamente ejecuta la aplicación en modo de desarrollo  , abrir en el navegador            http://localhost:3000 para visualizar los resultados.
 
 Construido con 🛠️
-Menciona las herramientas que utilizaste para crear tu proyecto
 
-Dropwizard - El framework web usado
-Maven - Manejador de dependencias
-ROME - Usado para generar RSS
-Contribuyendo 🖇️
-Por favor lee el CONTRIBUTING.md para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+Visual Studio Code : Editor de código fuente
+GitHub : Manejador de versiones 
+React : Biblioteca Javascript de código abierto
+Node.js: Entorno de tiempo de ejecución de JavaScript
+MATERIAL-UI : Framework de IU para React
 
 Wiki 📖
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra Wiki
+https://github.com/GohanSebas/practicareact.git
+https://nodejs.org/es/docs/
+https://es.reactjs.org/docs/getting-started.html
+https://github.com/features
+https://docs.netlify.com/?_ga=2.104733700.521699809.1616958424-1900603336.1615942767
+
 
 Versionado 📌
-Usamos SemVer para el versionado. Para todas las versiones disponibles, mira los tags en este repositorio.
+Version 1.0
+
 
 Autores ✒️
-Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
-
-Andrés Villanueva - Trabajo Inicial - villanuevand
-Fulanito Detal - Documentación - fulanitodetal
-También puedes mirar la lista de todos los contribuyentes quíenes han participado en este proyecto.
+Johan Sebastian Gamez - Desarrollador
 
 Licencia 📄
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para detalles
+Este proyecto está bajo la Licencia de uso Libre.
 
-Expresiones de Gratitud 🎁
-Comenta a otros sobre este proyecto 📢
-Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
-Da las gracias públicamente 🤓.
-etc.
+
+Agradecimientos 🎁
+Agradesco la colaboración el profesor Jose Sarta y a los compañeros de la ficha 1966781-A quienes desarrollamos este proyecto en conjunto para enteder mejor los conceptos de react.
