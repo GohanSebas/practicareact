@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+Practica  React 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+En esta practica de  desarrollamos un calculadora basica ,utilizando Node.js que nos permite  crear el proyecto en el  lenguaje de programación JavaScript y utilizando la bliblioteca de Javascript React con el  fin de conocer esta herramienta que facilita el desarrollo de aplicaciones.    
 
-## Available Scripts
+Comenzando 🚀
+//Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para //propósitos de desarrollo y pruebas.
 
-In the project directory, you can run:
+Desde el siguiente link puedes obtener una copia de este proyecto https://github.com/GohanSebas/practicareact.git,
+Este proyecto se encuentra desarrollado en
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Pre-requisitos 📋
+//Que cosas necesitas para instalar el software y como instalarlas
+Los siguientes pre-requisitos son en base a la maquina y programas utilizadas para el desarrollo de este proyecto lo cual no hace indispensable el uso de estos ya que podrian ser sustituidos por versiones superiores o o programas que cumplan con esta función.
+Se recomienda Visual Studio Code Version 1.54.3 o superior
 
-### `npm test`
+Da un ejemplo
+Instalación 🔧
+Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Dí cómo será ese paso
 
-### `npm run build`
+Da un ejemplo
+Y repite
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+hasta finalizar
+Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ejecutando las pruebas ⚙️
+Explica como ejecutar las pruebas automatizadas para este sistema
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Analice las pruebas end-to-end 🔩
+Explica que verifican estas pruebas y por qué
 
-### `npm run eject`
+Da un ejemplo
+Y las pruebas de estilo de codificación ⌨️
+Explica que verifican estas pruebas y por qué
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Da un ejemplo
+Despliegue 📦
+Agrega notas adicionales sobre como hacer deploy
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Construido con 🛠️
+Menciona las herramientas que utilizaste para crear tu proyecto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Dropwizard - El framework web usado
+Maven - Manejador de dependencias
+ROME - Usado para generar RSS
+Contribuyendo 🖇️
+Por favor lee el CONTRIBUTING.md para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Wiki 📖
+Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra Wiki
 
-## Learn More
+Versionado 📌
+Usamos SemVer para el versionado. Para todas las versiones disponibles, mira los tags en este repositorio.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Autores ✒️
+Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Andrés Villanueva - Trabajo Inicial - villanuevand
+Fulanito Detal - Documentación - fulanitodetal
+También puedes mirar la lista de todos los contribuyentes quíenes han participado en este proyecto.
 
-### Code Splitting
+Licencia 📄
+Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo LICENSE.md para detalles
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Expresiones de Gratitud 🎁
+Comenta a otros sobre este proyecto 📢
+Invita una cerveza 🍺 o un café ☕ a alguien del equipo.
+Da las gracias públicamente 🤓.
+etc.
