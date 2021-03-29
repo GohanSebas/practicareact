@@ -119,6 +119,11 @@ function Ejemplo() {
         setNumeroInicial(0);
        break;
 
+       default:
+        console.log("valor Actual ->" + valorActual);
+        console.log("Numero Inicial ->" + numeroInicial);
+        break;
+
      }
 
    }
