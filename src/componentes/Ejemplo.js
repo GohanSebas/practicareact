@@ -119,10 +119,15 @@ function Ejemplo() {
         setNumeroInicial(0);
        break;
 
+       default:
+        console.log("valor Actual ->" + valorActual);
+        console.log("Numero Inicial ->" + numeroInicial);
+        break;
+
      }
 
    }
- 
+
    function handleClickFlecha(tecla) {
     if(!flag){
       setValorActual(valorActual + tecla);
@@ -334,8 +339,9 @@ function Ejemplo() {
           </Grid>
           
         </Grid>
-              
-    </div>   
+
+    </div>
+
   );
 }
 export default Ejemplo;
