@@ -1,19 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import Button from '@material-ui/core/Button';
-import Container from '@material-ui/core/Container';
-import Alert from '@material-ui/lab/Alert';
+//import Container from '@material-ui/core/Container';
+//import Alert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Input from '@material-ui/core/Input';
-import InputLabel from '@material-ui/core/InputLabel';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import FormControl from '@material-ui/core/FormControl';
+//import Input from '@material-ui/core/Input';
+//import InputLabel from '@material-ui/core/InputLabel';
+//import InputAdornment from '@material-ui/core/InputAdornment';
+//import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
-import AccountCircle from '@material-ui/icons/AccountCircle';
+//import AccountCircle from '@material-ui/icons/AccountCircle';
 import DragHandleIcon from '@material-ui/icons/DragHandle';
-import config from '../config.json'
-import Typography from '@material-ui/core/Typography';
-
+import config from '../config.json';
+//import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   button: {
@@ -128,7 +127,8 @@ function Ejemplo() {
 
    }
 
-   
+
+
    function handleClickFlecha(tecla) {
     if(!flag){
       setValorActual(valorActual + tecla);
@@ -340,10 +340,10 @@ function Ejemplo() {
           </Grid>
           
         </Grid>
-              
+
     </div>
-   
-    
+
+
   );
 }
 export default Ejemplo;
