@@ -3,6 +3,8 @@
 "RESTA":"-",
 "MULTIPLICACION":"*",
 "DIVISION":"/",
-"IGUAL":"="
+"IGUAL":"=",
+"LIMPIAR":"C",
+"LIMPIARTODO":"CE"
 
 }
