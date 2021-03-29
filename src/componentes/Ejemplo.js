@@ -128,6 +128,7 @@ function Ejemplo() {
 
    }
 
+   
    function handleClickFlecha(tecla) {
     if(!flag){
       setValorActual(valorActual + tecla);
@@ -339,9 +340,10 @@ function Ejemplo() {
           </Grid>
           
         </Grid>
-
+              
     </div>
-
+   
+    
   );
 }
 export default Ejemplo;
