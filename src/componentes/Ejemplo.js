@@ -23,63 +23,319 @@ const useStyles = makeStyles((theme) => ({
 
 function Ejemplo() {
   const classes = useStyles();
-  const [ventana, setVentana] = useState(0);
+  const [numeroInicial, setNumeroInicial] = useState(0,0);
+  const [valorActual, setValorActual] = useState('');
+  const [flag, setFlag] = useState(false);
+  const [opcActual, setOpcActual] = useState('');
 
-   function handleClickflecha(tecla){
-     switch (tecla){
+   function handleClickOperacion(op){
+
+     switch (op){
+
        case config.SUMA:
+          setFlag(true);
+          setOpcActual(config.SUMA);
+        if(numeroInicial === 0){
+          setNumeroInicial(parseFloat(valorActual));
+          console.log("ENTRO");
+        } else {
+          setValorActual(numeroInicial + parseFloat(valorActual));
+          setNumeroInicial(numeroInicial + parseFloat(valorActual));        
+          console.log("valor Actual ->" + config.SUMA);
+          console.log("OPC Actual ->" + opcActual);
+        }
        break;
 
        case config.RESTA:
+        setFlag(true);
+        if(numeroInicial === 0){
+          setNumeroInicial(parseFloat(valorActual));
+        } else {
+          setValorActual(numeroInicial - parseFloat(valorActual));
+          setNumeroInicial(numeroInicial - parseFloat(valorActual));
+          setOpcActual(config.RESTA);
+        }
        break
 
        case config.DIVISION:
+        setFlag(true);
+        if(numeroInicial === 0){
+          setNumeroInicial(parseFloat(valorActual));
+        } else {
+          setValorActual(numeroInicial / parseFloat(valorActual));
+         // console.log("valor Actual ->" + valorActual);
+        //console.log("Numero Inicial ->" + numeroInicial);
+          setNumeroInicial(numeroInicial / parseFloat(valorActual));
+          setOpcActual(config.DIVISION);
+        }
+        
        break;
 
        case config.MULTIPLICACION:
+        setFlag(true);
+        if(numeroInicial === 0){
+          setNumeroInicial(parseFloat(valorActual));
+        } else {
+          setValorActual(numeroInicial * parseFloat(valorActual));
+          setNumeroInicial(numeroInicial * parseFloat(valorActual));
+          setOpcActual(config.MULTIPLICACION);
+        }
        break;
 
        case config.IGUAL:
+        setFlag(true);
+        if(opcActual === "+"){
+          setValorActual(numeroInicial + parseFloat(valorActual));
+          setNumeroInicial(numeroInicial + parseFloat(valorActual));
+          setOpcActual(" ");
+        } 
+        if(opcActual === "-"){
+          setValorActual(numeroInicial - parseFloat(valorActual));
+          setNumeroInicial(numeroInicial - parseFloat(valorActual));
+          setOpcActual(" ");
+        } 
+        if(opcActual === "*"){
+          setValorActual(numeroInicial * parseFloat(valorActual));
+          setNumeroInicial(numeroInicial * parseFloat(valorActual));
+          setOpcActual(" ");
+          
+        } 
+        if(opcActual === "/"){
+          setValorActual(numeroInicial / parseFloat(valorActual));
+           setNumeroInicial(numeroInicial / parseFloat(valorActual));
+           setOpcActual(" ");
+        } 
+
+       break;
+
+       case config.LIMPIAR:
+        
+        setValorActual(0);
+       break;
+
+       case config.LIMPIARTODO:
+        
+        setValorActual(0);
+        setNumeroInicial(0);
        break;
 
      }
 
    }
-
-
-
-  return (
+ 
+   function handleClickFlecha(tecla) {
+    if(!flag){
+      setValorActual(valorActual + tecla);
+    } else {
+      setValorActual(tecla);
+      setFlag(false);
+    }
     
-    <div className="button">
-    <button name="(" >(</button>
-    <button name="CE" >CE</button>
-    <button name=")" >)</button>
-    <button name="C" >C</button><br/>
+  }
 
 
-    <button name="1" onClick={e => this.props.onClick(e.target.name)}>1</button>
-    <button name="2" onClick={e => this.props.onClick(e.target.name)}>2</button>
-    <button name="3" onClick={e => this.props.onClick(e.target.name)}>3</button>
-    <button name="+" onClick={e => this.props.onClick(e.target.name)}>+</button><br/>
-
-
-    <button name="4" onClick={e => this.props.onClick(e.target.name)}>4</button>
-    <button name="5" onClick={e => this.props.onClick(e.target.name)}>5</button>
-    <button name="6" onClick={e => this.props.onClick(e.target.name)}>6</button>
-    <button name="-" onClick={e => this.props.onClick(e.target.name)}>-</button><br/>
-
-    <button name="7" onClick={e => this.props.onClick(e.target.name)}>7</button>
-    <button name="8" onClick={e => this.props.onClick(e.target.name)}>8</button>
-    <button name="9" onClick={e => this.props.onClick(e.target.name)}>9</button>
-    <button name="*" onClick={e => this.props.onClick(e.target.name)}>x</button><br/>
-
-
-    <button name="." onClick={e => this.props.onClick(e.target.name)}>.</button>
-    <button name="0" onClick={e => this.props.onClick(e.target.name)}>0</button>
-    <button name="=" onClick={e => this.props.onClick(e.target.name)}>=</button>
-    <button name="/" onClick={e => this.props.onClick(e.target.name)}>÷</button><br/>
-</div>
+   return (
     
+    <div className="calculator-body"> 
+     
+    <div className={classes.margin}>
+        <Grid container spacing={3} alignItems="flex-end">
+          <Grid item>
+            <DragHandleIcon />
+          </Grid>
+          <Grid item >
+            <TextField id="input-with-icon-grid" label="Resultado" value={valorActual} />
+          </Grid>
+        </Grid>
+      </div>
+      
+        <Grid container spacing={3}  >
+          
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("7")}
+              name="7"
+              variant="contained"              
+              size="small"
+              className={classes.button}
+              //startIcon={<SaveIcon />}
+            >
+              7
+            </Button>
+          </Grid>
+
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("8")}
+              name="8"
+              variant="contained"            
+              size="small"
+              className={classes.button}
+              //startIcon={<SaveIcon />}
+            >
+              8
+            </Button>
+          </Grid>
+
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("9")}
+              name="9"
+              variant="contained"
+              size="small"
+              className={classes.button}
+              //startIcon={<SaveIcon />}
+            >
+              9
+            </Button>
+          </Grid>
+
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickOperacion("/")}
+              name="/"
+              variant="contained"
+              color="primary"
+              size="small"
+              className={classes.button}
+              //startIcon={<SaveIcon />}
+            >
+              /
+            </Button>
+          </Grid>
+          
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("4")}
+              name="4"
+              variant="contained"             
+              size="small"
+              className={classes.button}
+            >
+              4
+            </Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("5")}
+              name="5"
+              variant="contained"
+              size="small"
+              className={classes.button}
+            >
+              5
+            </Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("6")}
+              name="6"
+              variant="contained"
+              size="small"
+              className={classes.button}
+            >
+              6
+            </Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickOperacion("-")}
+              name="-"
+              variant="contained"
+              color="primary"
+              size="small"
+              className={classes.button}
+            >
+              -
+            </Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("1")}
+              name="1"
+              variant="contained"
+                size="small"
+              className={classes.button}
+            >
+              1
+            </Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("2")}
+              name="2"
+              variant="contained"
+              size="small"
+              className={classes.button}
+            >
+              2
+            </Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickFlecha("3")}
+              name="3"
+              variant="contained"
+              size="small"
+              className={classes.button}
+            >
+              3
+            </Button>
+          </Grid>
+          <Grid item xs={3}>
+            <Button
+              onClick={()=>handleClickOperacion("+")}
+              name="+"
+              variant="contained"
+              color="primary"
+              size="small"
+              className={classes.button}
+            >
+              +
+            </Button>
+          </Grid>
+
+          <Grid item xs={3} >
+            <Button
+             onClick={()=>handleClickOperacion("=")}
+              name="="
+              variant="contained"
+              color="primary"
+              size="small"
+              className={classes.button}
+            >
+              =
+            </Button>
+          </Grid>
+
+          <Grid item xs={3} >
+            <Button
+             onClick={()=>handleClickOperacion("C")}
+              name="C"
+              variant="contained"
+              color="primary"
+              size="small"
+              className={classes.button}
+            >
+              C
+            </Button>
+          </Grid>
+          <Grid item xs={3} >
+            <Button
+             onClick={()=>handleClickOperacion("CE")}
+              name="CE"
+              variant="contained"
+              color="primary"
+              size="small"
+              className={classes.button}
+            >
+              CE
+            </Button>
+          </Grid>
+          
+        </Grid>
+              
+    </div>   
   );
 }
 export default Ejemplo;

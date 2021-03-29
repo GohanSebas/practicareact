@@ -52,4 +52,6 @@ Este proyecto está bajo la Licencia de uso Libre.
 
 
 Agradecimientos 🎁
+
 Agradesco la colaboración el profesor Jose Sarta y a los compañeros de la ficha 1966781-A quienes desarrollamos este proyecto en conjunto para enteder mejor los conceptos de react.
+
